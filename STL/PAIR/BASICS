@@ -1,0 +1,50 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+#define ll long long
+#define vll vector<ll,ll>
+#define endl "\n"
+
+int main(){
+    // DECLARATION
+    pair<ll, string> p;
+
+
+    //INSERTION
+    p = make_pair(2, "abcd");
+
+    cout << p.first << " " << p.second << endl;
+
+    cin >> p.first >> p. second;
+
+    cout << p.first << " " << p.second << endl;
+
+
+    //COPY
+    pair<ll, string> &p1 = p;
+
+    p1.first = 6;
+    p1.second= "xyz";
+
+    cout << p.first << " " <<  p.second; 
+
+
+    //PAIR OF ARRAY
+    pair<ll,ll> p_arr[3];
+
+
+    //INPUT OF PAIR OF ARRAY
+    for(ll i = 0; i < 3; i++){
+        cin >> p_arr[i].first >> p_arr[i].second;
+    }
+
+    swap(p_arr[0], p_arr[2]);
+
+    for(ll i = 0; i < 3; i++){
+        cout << p_arr[i].first << " " << p_arr[i].second << endl;
+     }
+
+
+    return 0;
+}
+
