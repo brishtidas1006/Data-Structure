@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+#define ll long long
+#define vll vector<ll,ll>
+#define endl "\n"
+
+int main(){
+
+    vector<ll> v = {1, 2, 3,4};
+    ll x; cin >> x;
+    //INSERTION at the end
+    v.push_back(x);
+
+    for(ll i = 0; i < v.size(); i++) cout << v[i] << " ";
+    cout << endl;
+    //INSERTION AT THE BEGINING
+    v.insert(v.begin(), x);
+    for(ll i = 0; i < v.size(); i++) cout << v[i] << " ";
+    cout << endl;
+    //INSERTION AT THE KTH INDEX
+    ll k = 3;
+    if(k >= 0 && k <= v.size())
+    v.insert(v.begin() + k, 3);
+    for(ll i = 0; i < v.size(); i++) cout << v[i] << " ";
+    cout << endl;
+
+    return 0;
+}
+
